@@ -45,7 +45,7 @@ p {
 
 .lanterns {
     min-width: 200px;
-    border-top: #ffd000 10px solid;
+    border-top: #BDD4DE 10px solid;
 }
 
 .title-text {
@@ -90,7 +90,7 @@ p {
 /*Links*/
 .links {
     text-decoration: none;
-    color:#ffd000;
+    color:#BDD4DE;
 }
     .links:hover {
         text-decoration: underline;
@@ -165,7 +165,7 @@ body {
     text-align: center;
 }
 #landing {
-    background-image:url(Lanterns\ background.jpg);
+    background-image:url(galaxy-3608029_1920.jpg);
     background-size:cover;
     background-position:center;
     height:100vh;
@@ -181,7 +181,7 @@ body {
     font-size:300%;
     line-height:1.2;
     background-color:#ff3232;
-    color:#ffd000;
+    color:#BDD4DE;
     border:#8f0000 5px solid;
     padding: 20px 30px;
     border-radius:30px;
@@ -189,7 +189,7 @@ body {
 #landing > h2 {
     font-size:300%;
     line-height:1;
-    color:#ffd000;
+    color:#BDD4DE;
     border:#8f0000 0px solid;
     padding: 20px 30px;
     border-radius:10px;
@@ -197,7 +197,7 @@ body {
 #landing > h3 {
     font-size:180%;
     line-height:1;
-    color:#ffd000;
+    color:#BDD4DE;
     border:#8f0000 0px solid;
     padding: 20px 30px;
     border-radius:10px;
@@ -205,14 +205,14 @@ body {
 #landing > .button {
     font-size:18px;
     text-decoration:none;
-    color:#ffd000;
-    border:#ffd000 1px solid;
+    color:#BDD4DE;
+    border:#BDD4DE 1px solid;
     padding: 5px 25px;
     border-radius:10px;
     margin-top:20px;
 }
 #landing > .button:hover {
-    background:#ffd000;
+    background:#BDD4DE;
     color:rgb(0, 0, 0);
 }
 
@@ -222,12 +222,12 @@ header.topbar {
     font-size: 4vw;
     font-weight: bold;
     text-align: center;
-    color: #ffd000;
+    color: #BDD4DE;
     font-family: 'Montserrat';
 }
 .navigation {
     grid-auto-rows: minmax(auto, auto);
-    background-image: linear-gradient(black, tomato);
+    background-image: linear-gradient(black, #2B3A42, black);
     align-items: center;
 }
 .navigation.navEvent {
@@ -251,7 +251,7 @@ header.topbar {
     display: none;
     position: absolute;
     margin-top: 4%;
-    background-image: linear-gradient(tomato, rgb(255, 141, 121));
+    background-image: linear-gradient(black, #2B3A42);
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -262,7 +262,7 @@ header.topbar {
     .dropdownThings > a {
         display: grid;
         grid-auto-columns: minmax(0.2vw, auto);
-        color: black;
+        color: #BDD4DE;
         padding: .5em;
         text-decoration: none;
         
@@ -271,7 +271,7 @@ header.topbar {
         display: grid;
     }
     .dropdownThings > a:hover {
-        background: #671010;
+        background: #3F5765;
         color: #ffd000
     }
 
@@ -287,9 +287,10 @@ header.topbar {
     justify-content: center;
     font-size: 2.5vw;
     font-weight: 600;
-    color:#ffd000;
-    border-left: #ffd000 2px solid;
-    border-right: #ffd000 2px solid;
+    color:#BDD4DE;
+    border-left: #BDD4DE 2px solid;
+    border-right: #BDD4DE 2px solid;
+    border-bottom: #3F5765 2px solid;
     text-decoration: none;
     font-family: 'Montserrat';
     padding-top: 4%;
@@ -298,18 +299,11 @@ header.topbar {
 .navigation-text:hover {
     cursor: pointer;
     text-decoration: none;
-    color:#957a00;
+    color:#ffd000;
 }
 
-/*(Main Page) Big Arch Image*/
-.arch {
-    margin-left: 5%;
-    margin-right: 5%;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.arch-text {
+/*(Main Page) Big Image*/
+.image-text {
     position: absolute;
     max-width: 50%;
     max-height: 50%;
@@ -446,7 +440,7 @@ header.topbar {
         padding: 0 2em;
     }
     .faq > div:nth-of-type(2n-1) {
-        text-decoration: underline #ffd000 4px;
+        text-decoration: underline #BDD4DE 4px;
         text-underline-offset: 5px;
         font-weight: bold; 
         font-size: 110%; 
@@ -611,7 +605,7 @@ header.topbar {
         font-weight: bold;
         font-size: 20px;
         background: #D6AC39;
-        border: #ffd000 5px solid;
+        border: #BDD4DE 5px solid;
         border-radius: 10px;
     }
     .previous:hover, .next:hover {
@@ -644,7 +638,7 @@ header.topbar {
     .newsletterContent > div:nth-of-type(1) {
         background-image: linear-gradient(90deg, #EA563E 0 15%, #da4a34 15% 30%, #CA3D2B 30% 70%, #da4a34 70% 85%, #EA563E 85% 100%);
         font-size: 125%;
-        text-decoration: underline #ffd000 4px;
+        text-decoration: underline #BDD4DE 4px;
         border: #671010 6px solid;
         border-radius: 10px;
         margin: 0.5em 0.8em 1em;
@@ -866,10 +860,10 @@ header.topbar {
 }
 
 .navMobileTop {
-    border-top: #ffd000 2px solid;
+    border-top: #BDD4DE 2px solid;
 }
 .navMobileBottom {
-    border-bottom: #ffd000 2px solid;
+    border-bottom: #BDD4DE 2px solid;
 }
 
 .boxinfo > .image {
@@ -919,7 +913,7 @@ header.topbar {
     margin-right: 1em;
 }
 
-.arch-text {
+.image-text {
     max-width: 100%;
     max-height: 100%;
 }
