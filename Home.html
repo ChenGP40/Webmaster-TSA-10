@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="description" content="Space Tourism">
+<meta name="author" content="2103-901">
+<meta name="keywords" content="Space Tourism, NASA, Rockets, Exploration, Space, Cruise">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webmaster 2103-901</title>
+<link rel="icon" type="image/x-icon" href="Logo.svg">
+<link rel="stylesheet" href="Space.css">
+<script src="JAVASCRIPT.js"></script>
 </head>
-<body>
-    space tourism
+
+<body style="background-color:rgb(255, 255, 255);">
+
+<section id="sectionA"></section>
+<header class="topbar">| - - Home - - |</header>
+<header>
+<nav>
+<div class="navigation">
+	<div class="menu navigation-text">
+		<a onclick="toggleMenu()">Menu</a>
+	</div>
+	<div id="navMobile">
+		<a href="Home.html" class="navigation-text" title="Home">Home</a>
+		<div class="dropdown navigation-text" title="Information" style="position: relative;">Information <span class="arrow" style="font-size: 75%">⮟</span>
+			<a href="Info.html">
+				<span class="clickableBox"></span></a>
+			<div class="dropdownThings">
+				<span style="color: #ffd000">More: </span>
+				<a href="Training.html" title="Chinese New Year Traditions">Training</a>
+				<a href="Vehicles.html" title="Chinese Zodiac Signs">Our Vehicles</a>
+			</div>
+		</div>
+		<a href="Journey.html" class="navigation-text" title="The Journey">The Journey</a>
+		<div class="dropdown navigation-text" title="About Us" style="position: relative;">About Us <span class="arrow" style="font-size: 75%">⮟</span>
+			<a href="About.html">
+				<span class="clickableBox"></span></a>
+			<div class="dropdownThings">
+				<span style="color: #ffd000">More: </span>
+				<a href="About.html#Team" title="Meet the Team!">Meet the Team!</a>
+				<a href="About.html#FAQ" title="Frequently Asked Questions">FAQ</a>
+			</div>
+		</div>
+		<a href="Resources.html" class="navigation-text" title="Resources">Resources</a>
+	</div>
+</div>
+</nav>
+</header>
+
+<div class="arch reveal fadeIn">
+<img id="img">
+	<img src="Arch2.svg" alt="Arch with Lanterns">
+	<div class="arch-text home-text" style="background:rgb(212, 72, 53, 0.7); border:#EA563E 5px solid; border-radius: 25px;">Celebrate<br/>Chinese New Year<br/>with us!</div>
+</div>
+<br/>
+
+<main style="background-image: linear-gradient(tomato, #CA3D2B);">
+<div class="grid box" style="margin-bottom: 1%">
+	<div class="reveal">
+
+	</div>
+	<div class="nestedimage reveal fromLeft">
+		<img src="Dragon.jpg" style="border-radius: 25px" alt="Dragon Dance">
+		<div class="imagetext">Dragon Dance performance in celebration of Chinese New Year.</div>
+	</div>
+	<div class="reveal fromRight">
+
+	</div>
+	<div class="reveal">
+
+	</div>
+</div>
+
+</main>
+<footer class="footer">
+	<div class="footerOne">
+		<img class="footerimg" src="Logo.svg">
+	</div>
+	<div class="footerTwo"><i>
+		"A journey of a thousand miles begins with a single step"</i><br/>
+		- Lao Tzu
+	</div>
+	<div class="footerThree">
+		<span style="color:#ffd000; border-bottom:#4b0b0b 5px solid;">Explore</span><br/>
+		<span style="font-size: 75%" ><a href="Home.html#sectionA" class="links2">Home</a><br/>
+		<a href="Info.html" class="links2">Information</a><br/>
+		<a href="Journey.html" class="links2">The Journey</a><br/>
+		<a href="About.html" class="links2">About Us</a><br/>
+		<a href="Resources.html" class="links2">Resources</a></span>
+	</div>
+	<div class="footerFour">
+		<span style="color:#ffd000; border-bottom:#4b0b0b 5px solid;">Contact</span><br/>
+		<span style="font-size: 75%"><a href="https://twitter.com/TSA_T_1426" class="links2">Twitter</a><br/>
+		<a href="https://www.instagram.com/tsa_t1426/" class="links2">Instagram</a><br/>
+		<a href="https://www.youtube.com/channel/UCxM0mzMCpiiWjd6vf_QxtJQ/playlists" class="links2">Youtube</a><br/>
+		<a href="Newsletter.html" class="links2">Our Newsletter</a><br/></span>
+	</div>
+	<div class="footerFive">
+    	<a class="links" style="border-bottom:#4b0b0b 5px solid;" href="Help.html">If you have any questions or need help, please click here.</a>
+	</div>
+</footer>
 </body>
 </html>
