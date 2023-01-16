@@ -1,6 +1,6 @@
 /*Desktop*/
 *{
-    border:#333 1px transparent;
+    border:#333 1px solid;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,16 +27,16 @@ p {
     font-size: 150%;
 }
     .grid > div {
-        background: #D44835;
-        border: #EA563E 15px solid;
+        background: #3F5765;
+        border: #2B3A42 15px solid;
         border-radius: 25px;
     }
 .gridTwo {
     display: grid;
     padding: 1em;
     grid-template-columns: repeat(4, 1fr);
-    background: #D44835;
-    border: #EA563E 15px solid;
+    background: #3F5765;
+    border: #2B3A42 15px solid;
     border-radius: 25px;
     font-size: 150%;
     align-items: center;
@@ -68,41 +68,33 @@ p {
     justify-self: center;
     min-width: 700px;
     min-height: 700px;
-    background: #D44835;
+    background: #3F5765;
     margin-top: 2em;
     margin-bottom: 1em;
     padding-top: 1%;
-    border: #EA563E 15px solid;
+    border: #2B3A42 15px solid;
     border-radius: 25px;
 }
 .form {
     justify-self: center;
     min-width: 700px;
     min-height: 535px;
-    background: #D44835;
+    background: #3F5765;
     margin-top: 2em;
     margin-bottom: 1em;
     padding-top: 1%;
-    border: #EA563E 15px solid;
+    border: #2B3A42 15px solid;
     border-radius: 25px;
 }
 
 /*Links*/
 .links {
     text-decoration: none;
-    color:#BDD4DE;
+    color:#ffffff;
 }
     .links:hover {
         text-decoration: underline;
         color:#ffe675;
-    }
-.links2 {
-    text-decoration: none;
-    color:#ffffff;
-}
-    .links2:hover {
-        text-decoration: underline;
-        color:#828282;
     }
 
 /*Footer*/
@@ -112,9 +104,9 @@ p {
     grid-auto-rows: minmax(150px, auto);
     grid-row-start: 8;
     grid-row-end: 9;
-    background: #671010;
-    border-top: #4b0b0b 10px solid;
-    border-bottom: #4b0b0b 10px solid;
+    background: #151c1f;
+    border-top: #0d1214 10px solid;
+    border-bottom: #0d1214 10px solid;
     font-size: 175%;
     font-weight: 600;
 }
@@ -178,29 +170,12 @@ body {
 
 }
 #landing > h1 {
-    font-size:300%;
+    font-size:250%;
     line-height:1.2;
-    background-color:#ff3232;
+    background-color:rgba(63, 87, 101, 0.6);
     color:#BDD4DE;
-    border:#8f0000 5px solid;
-    padding: 20px 30px;
-    border-radius:30px;
-}
-#landing > h2 {
-    font-size:300%;
-    line-height:1;
-    color:#BDD4DE;
-    border:#8f0000 0px solid;
-    padding: 20px 30px;
     border-radius:10px;
-}
-#landing > h3 {
-    font-size:180%;
-    line-height:1;
-    color:#BDD4DE;
-    border:#8f0000 0px solid;
     padding: 20px 30px;
-    border-radius:10px;
 }
 #landing > .button {
     font-size:18px;
@@ -213,7 +188,7 @@ body {
 }
 #landing > .button:hover {
     background:#BDD4DE;
-    color:rgb(0, 0, 0);
+    color:#3F5765;
 }
 
 /*Navigation Bar*/
@@ -229,9 +204,6 @@ header.topbar {
     grid-auto-rows: minmax(auto, auto);
     background-image: linear-gradient(black, #2B3A42, black);
     align-items: center;
-}
-.navigation.navEvent {
-    background-image: linear-gradient(black, rgba(0, 0, 0, 0.3));
 }
 
 .navigation > div {
@@ -255,7 +227,8 @@ header.topbar {
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  .dropdownEvent {
+  .dropdownJourney
+   {
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(255, 141, 121) 10%, tomato);
     box-shadow: none;
   }
@@ -305,11 +278,19 @@ header.topbar {
 /*(Main Page) Big Image*/
 .image-text {
     position: absolute;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 75%;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+.image-text2 {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 25%;
+    left: 75%;
+    transform: translate(-75%, -25%);
 }
 
 /*Grid Systems*/
@@ -334,12 +315,12 @@ header.topbar {
     grid-column: 1 / 5;
 }
 .box > div:nth-of-type(2) {
-    background: #12263A;
+    background: #BDD4DE;
     margin-left: 5%;
     grid-column: 1 / 3;
 }
 .box > div:nth-of-type(3) {
-    background: #CA3D2B;
+    background: #FF530D;
     margin-right: 5%;
     grid-column: 3 / 5;
 }
@@ -374,15 +355,16 @@ header.topbar {
         margin-right: 1em;
     }
 
-/*Events Page System*/
-#events {
-    background-image:url(Large\ balloon.jpg);
+/*Journey Page System*/
+#journey {
+    background-image:url(Planets.svg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     min-height: 500px;
 }
-.boxevent {
+.boxJourney
+ {
     display: grid;
     font-size: 150%;
     grid-template-columns: repeat(6, 1fr);
@@ -390,43 +372,52 @@ header.topbar {
     gap: 1em;
     margin-bottom: 5%;
 }
-    .boxevent > div{
+    .boxJourney
+     > div {
         text-decoration: none;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(63, 87, 101, 0.8);
+        border:#2B3A42 10px solid;
+        border-radius: 10px;
         padding:1em;
+        font-weight: bold;
     }
-.boxevent > div:nth-of-type(1) {
+    .JourneyText {
+        color:#BDD4DE;
+    }
+.boxJourney
+ > div:nth-of-type(1) {
     grid-column: 1 / 7;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
 }
-.boxevent > div:nth-of-type(2) {
-    background:rgba(0, 0, 0, 0.4);
+.boxJourney
+ > div:nth-of-type(2), div:nth-of-type(7), div:nth-of-type(9) {
+    font-family: 'Montserrat';
     font-size: 200%;
     padding: 0.25em;
     grid-column: 3 / 5;
+    background:rgb(21, 28, 31, 0.8);
+    border:#FF530D 7px solid;
+    border-radius: 10px;
 }
-.boxevent > div:nth-of-type(3) {
+.boxJourney
+ > div:nth-of-type(3), div:nth-of-type(5), div:nth-of-type(10) {
     grid-column: 2 / 4;
 }
-.boxevent > div:nth-of-type(4) {
+.boxJourney
+ > div:nth-of-type(4), div:nth-of-type(6), div:nth-of-type(11) {
     grid-column: 4 / 6;
 }
-.boxevent > div:nth-of-type(5) {
-    background:rgba(0, 0, 0, 0.4);
-    font-size: 200%;
-    padding: 0.25em;
+.boxJourney
+ > div:nth-of-type(8) {
     grid-column: 3 / 5;
-}
-.boxevent > div:nth-of-type(2n+6) {
-    grid-column: 2 / 4;
-}
-.boxevent > div:nth-of-type(2n+7) {
-    grid-column: 4 / 6;
-}
+ }
+
 
 /*About Us Page System*/
 .faq {
@@ -574,7 +565,7 @@ header.topbar {
     margin: 0 2em;
     background: tomato;
     padding:1em;
-    border: #EA563E 15px solid;
+    border: #2B3A42 15px solid;
     border-radius: 25px;
     align-items: center;
 }
@@ -614,11 +605,11 @@ header.topbar {
 
 /*Newsletter*/
 .newsletter {
-    background: #D44835;
+    background: #3F5765;
     margin-left: 10%;
     margin-right: 10%;
     padding:1em;
-    border: #EA563E 15px solid;
+    border: #2B3A42 15px solid;
     border-radius: 25px;
     align-items: center;
 }
@@ -636,7 +627,7 @@ header.topbar {
         align-items: center;
     }
     .newsletterContent > div:nth-of-type(1) {
-        background-image: linear-gradient(90deg, #EA563E 0 15%, #da4a34 15% 30%, #CA3D2B 30% 70%, #da4a34 70% 85%, #EA563E 85% 100%);
+        background-image: linear-gradient(90deg, #2B3A42 0 15%, #da4a34 15% 30%, #CA3D2B 30% 70%, #da4a34 70% 85%, #2B3A42 85% 100%);
         font-size: 125%;
         text-decoration: underline #BDD4DE 4px;
         border: #671010 6px solid;
@@ -646,7 +637,7 @@ header.topbar {
         align-items: center;
     }
     .newsletterContent > div:nth-of-type(2) {
-        background: #EA563E;
+        background: #2B3A42;
     }
     .newsletterContent > div:nth-of-type(3) {
         background: #da4a34;
@@ -896,19 +887,23 @@ header.topbar {
     margin: 0 5%;
 }
 
-.boxevent > div:nth-of-type(3) {
+.boxJourney
+ > div:nth-of-type(3) {
     grid-column: 1 / 4;
     margin-left: 1em;
 }
-.boxevent > div:nth-of-type(4) {
+.boxJourney
+ > div:nth-of-type(4) {
     grid-column: 4 / 7;
     margin-right: 1em;
 }
-.boxevent > div:nth-of-type(2n+6) {
+.boxJourney
+ > div:nth-of-type(2n+6) {
     grid-column: 1 / 4;
     margin-left: 1em;
 }
-.boxevent > div:nth-of-type(2n+7) {
+.boxJourney
+ > div:nth-of-type(2n+7) {
     grid-column: 4 / 7;
     margin-right: 1em;
 }
