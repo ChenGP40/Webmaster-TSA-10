@@ -1,6 +1,6 @@
 /*Desktop*/
 *{
-    border:#333 1px transparent;
+    border:#333 1px solid;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ html {
 }
 
 img {
-    float: center;
     max-width: 100%;
     height: auto;
 }
@@ -195,24 +194,17 @@ body {
     color:#3F5765;
 }
 
-/*Navigation Bar*/
-header.topbar {
-    background-color: black;
-    font-size: 4vw;
-    font-weight: bold;
-    text-align: center;
-    color: #BDD4DE;
-    font-family: 'Montserrat';
-}
+/*Navigation Bar*/                                                             
 .navigation {
     grid-auto-rows: minmax(auto, auto);
-    background-image: linear-gradient(black, #2B3A42, black);
+    background-image: linear-gradient( #2B3A42, black);
     align-items: center;
 }
 
 .navigation > div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr
 }
 .clickableBox{
     position: absolute; 
@@ -261,8 +253,8 @@ header.topbar {
 }
 
 .navigation-text {
-    justify-content: center;
-    font-size: 2.5vw;
+    align-self: center;
+    font-size: 1.5vw;
     font-weight: 600;
     color:#BDD4DE;
     border-left: #BDD4DE 2px solid;
@@ -270,8 +262,7 @@ header.topbar {
     border-bottom: #3F5765 2px solid;
     text-decoration: none;
     font-family: 'Montserrat';
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding: 1% 0;
 }
 .navigation-text:hover {
     cursor: pointer;
