@@ -2,7 +2,7 @@
 
 /*Desktop*/
 *{
-    border:white 1px transparent;
+    border:red 1px transparent;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -226,10 +226,10 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 7.5% 5em;
-    padding: 1.5em 5%;
+    padding: 1.5em 10%;
     background: linear-gradient(black, #2B3A42);
     font-weight: bold;
-    font-size: 125%;
+    font-size: 150%;
     text-decoration: none;
     border:white 2px solid;
 }
@@ -271,7 +271,7 @@ ul {
 .nestedimage {
     display: grid;
     background-color: black;
-    padding: 1em;
+    /* padding-top: 1em; */
 }
 
 /*Other Page Systems*/
@@ -284,12 +284,10 @@ ul {
 }
 
 #info {
-    background-image:url(Starry\ Night.svg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     min-height: 500px;
-    
 }
 .boxinfo {
     margin: 0 7.5% 5em;
