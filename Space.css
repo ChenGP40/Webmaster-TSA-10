@@ -2,7 +2,7 @@
 
 /*Desktop*/
 *{
-    border:red 1px solid;
+    border:red 1px transparent;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -38,22 +38,6 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     font-size: 125%;
-}
-
-.gridTwo {
-    display: grid;
-    padding: 1em;
-    grid-template-columns: repeat(4, 1fr);
-    background: #3F5765;
-    border: #2B3A42 15px solid;
-    border-radius: 25px;
-    font-size: 150%;
-    align-items: center;
-}
-ul {
-    background: #3F5765;
-    border: #2B3A42 15px solid;
-    border-radius: 25px;
 }
 
 .help {
@@ -311,6 +295,7 @@ ul {
 .boxJourney {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: black;
     margin: 0 2.5% 2.5em;
     padding: 1.5em 2%;
     font-weight: normal;
