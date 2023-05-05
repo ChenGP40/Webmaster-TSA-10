@@ -2,6 +2,12 @@
 	include_once 'header.php';
 ?>
 
+<?php
+if (isset($_SESSION["userUid"])) {
+	echo "Hello there " . $_SESSION["userUid"] . "</php";
+}
+?>
+			
 <div class="reveal fadeIn" style="background-color: black;">
 	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px); padding-bottom: 2em;" alt="Breathtaking Image of Earth">
 	<div class="imageText"><img src="images/Horizon Name Logo New.png"></div>

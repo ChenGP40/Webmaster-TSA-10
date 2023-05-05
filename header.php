@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,8 +42,17 @@
 		<a href="Journey.php" class="navigationText" title="The Journey">The Journey</a>
 		<a href="About.php" class="navigationText" title="About Us">About Us</a>
 		<a href="Resources.php" class="navigationText" title="Resources">Resources</a>
-		<a href="SignUp.php" class="navigationText" title="Sign up here!">Sign Up</a>
-		<a href="Login.php" class="navigationText" title="Login here!">Login</a>
+		<?php
+			if (isset($_SESSION["userUid"])) {
+				echo "<a href='Profile.php' class='navigationText' title='My Profile'>Profile</a>";
+				echo "<a href='includes/logoutInc.php' class='navigationText' title='Logout'>Logout</a>";
+			}
+			else {
+				echo"<a href='SignUp.php' class='navigationText' title='Sign up here!'>Sign Up</a>";
+				echo"<a href='Login.php' class='navigationText' title='Login here!'>Login</a>";
+			}
+		
+		?>
 	</div>
 </div>
 </nav>

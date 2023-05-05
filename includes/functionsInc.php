@@ -1,5 +1,6 @@
 <?php
 
+//Signup Page
 function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
     $result;
     if (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat)) {
@@ -83,4 +84,40 @@ function createUser($conn, $name, $email, $username, $pwd) {
     mysqli_stmt_close($stmt);
     header("location: ../SignUp.php?error=none");
     exit();
+}
+
+//Login Page
+function emptyInputLogin($username, $pwd) {
+    $result;
+    if (empty($username) || empty($pwd)) {
+        $result = true;
+    }
+    else {
+        $result = false;
+    }
+    return $result;
+}
+
+function loginUser($conn, $username, $pwd) {
+    $uidExists = uidExists($conn, $username, $username);
+
+    if ($uidExists == false) {
+        header("location: ../login.php?error=wrongLogin");
+        exit();
+    }
+
+    $pwdHashed = $uidExists["usersPwd"];
+    $checkPwd = password_verify($pwd, $pwdHashed);
+
+    if ($checkPwd === false) {
+        header("location: ../login.php?error=wrongLogin");
+        exit();
+    }
+    else if ($checkPwd === true) {
+        session_start();
+        $_SESSION["userId"] = $uidExists["usersId"];
+        $_SESSION["userUid"] = $uidExists["usersUid"];
+        header("location: ../index.php");
+        exit();
+    }
 }
