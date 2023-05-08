@@ -2,15 +2,19 @@
 	include_once 'header.php';
 ?>
 
-<div class="signUp">
-    <h2>Sign Up</h2>
+<body id="info" style="background-image:url(images/galaxy-3608029_1920.jpg);">
+<div>
     <form action="includes/signupInc.php" method="post">
+    <h2>Sign Up</h2>
+    <hr>
         <input type="text" name="name" placeholder="Full Name...">
         <input type="text" name="email" placeholder="Email...">
+        <hr>
         <input type="text" name="uid" placeholder="Username...">
         <input type="password" name="pwd" placeholder="Password...">
         <input type="password" name="pwdRepeat" placeholder="Repeat Password...">
         <button type="submit" name="submit">Sign Up</button>
+    <p>Already have an account? Login</p>
     </form>
     
     <?php

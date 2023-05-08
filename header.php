@@ -13,7 +13,9 @@
 <title>Webmaster 2103-901</title>
 <link rel="icon" type="image/x-icon" href="images/Logo.svg">
 <link rel="stylesheet" href="css/Space.css">
-<link href='https://fonts.googleapis.com/css?family=Chivo Mono' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
 <script src="js/JAVASCRIPT.js"></script>
 </head>
 
@@ -57,5 +59,3 @@
 </div>
 </nav>
 </header>
-
-<body id="info" style="background-image:url(images/Starry\ Night.svg);">

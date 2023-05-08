@@ -17,7 +17,7 @@ body {
     min-height: 100%;
     grid-template-rows: 1fr auto;
     background-color:black;
-    font-family: 'Chivo Mono';
+    font-family: 'Exo 2', sans-serif;
     font-size: 17px;
     color:white;
     line-height:1.6;
@@ -31,7 +31,6 @@ img {
 
 p {
     text-align: center;
-    font-size: 150%;
 }
 
 .grid {
@@ -119,6 +118,7 @@ p {
 
 /*Navigation Bar*/                                                       
 .navigation {
+    position: absolute;
     z-index: 1;
     grid-auto-rows: minmax(auto, auto);
     background-color: transparent;
@@ -128,7 +128,7 @@ p {
 
 .navigation > div {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 .clickableBox{
     position: absolute; 
@@ -310,7 +310,36 @@ p {
         grid-column: 2 / 3;
         justify-self: center;
     }
- 
+
+form {
+    display: grid;
+    margin: 0 35% 4em;
+    padding: 1.5em 5%;
+    background: #151c1f;
+    border: #0d1214 10px solid;
+    border-radius: 35px;
+    font-weight: normal;
+    font-size: 125%;
+    text-decoration: none;
+}
+input {
+    padding: 1em;
+    margin: 1em;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+button {
+    padding: 1em;
+    margin: 1em;
+    background-color: rgb(27, 143, 27);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 /*Newsletter*/
 .newsletter {
     background: #3F5765;
