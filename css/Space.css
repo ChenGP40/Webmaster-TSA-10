@@ -2,7 +2,7 @@
 
 /*Desktop*/
 *{
-    border:red 1px transparent;
+    border:red 1px solid;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -118,19 +118,17 @@ p {
 
 /*Navigation Bar*/                                                       
 .navigation {
-    position: absolute;
-    z-index: 1;
-    grid-auto-rows: minmax(auto, auto);
-    background-color: transparent;
+    display: flex;
+    float: center;
     align-items: center;
-    padding-top: 1em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    background-color: transparent;
 }
 
-.navigation > div {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-.clickableBox{
+/* .clickableBox{
     position: absolute; 
     width:100%;
     height:100%;
@@ -161,24 +159,19 @@ p {
     .dropdownThings > a:hover {
         background: #3F5765;
         color: #ffd000
-    }
-
-.navigation > #navMobile {
-    display: grid;
-}
+    } */
 
 .navigation > .menu {
     display: none;
 }
 
 .navigationText {
-    align-self: center;
-    font-size: 1.5vw;
-    font-weight: 600;
-    color:#BDD4DE;
-    border-left: #BDD4DE 2px solid;
+    margin: .5em;
+    padding: 0, .5em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    color:white;
     text-decoration: none;
-    padding: 1% 0;
 }
 .navigationText:hover {
     cursor: pointer;
