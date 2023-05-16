@@ -24,11 +24,6 @@ body {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 p {
     text-align: center;
 }
@@ -37,6 +32,27 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     font-size: 125%;
+}
+
+/* Image Systems */
+.imgWrapper {
+    width: 1vw;
+    height: 1vh;
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imageText {
+    position: absolute;
+    max-width: 75%;
+    max-height: 75%;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .help {
@@ -179,14 +195,7 @@ p {
     color:#ffd000;
 }
 
-.imageText {
-    position: absolute;
-    max-width: 75%;
-    max-height: 75%;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .text {
     color: white;
     font-size: 300%;
