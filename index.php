@@ -10,19 +10,19 @@ if (isset($_SESSION["userUid"])) {
 
 <body>
 <div class="imgWrapper">
-	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth">
-	<div class="imageText"><img src="images/Horizon Name Logo New.png"></div>
+	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth" draggable="false">
+	<div class="imageText"><img src="images/Horizon Name Logo New.png" draggable="false"></div>
 </div>
 <div class="imgWrapper">
-	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth">
+	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth" draggable="false">>
 	<div class="imageText">
 		Check out our amazing packages!
 		<button> 
 	</div>
 </div>
 <div class="imgWrapper">
-	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth">
-	<div class="imageText"><img src="images/Horizon Name Logo New.png"></div>
+	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth" draggable="false">
+	<div class="imageText"></div>
 </div>
 
 </body>

@@ -1,14 +1,16 @@
-/*Navigation Bar*/
-function toggleMenu() {
-    var x = document.getElementById("navMobile");
-    if (x.style.display === "grid") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "grid";
-    }
-  }
+// Navigation Bar
+// function toggleMenu() {
+//     var x = document.getElementById("navMobile");
+//     if (x.style.display === "grid") {
+//       x.style.display = "none";
+//     } else {
+//       x.style.display = "grid";
+//     }
+//   }
+
+
   
-/*Animations*/
+// Animations
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   

@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="Space Tourism">
@@ -31,6 +31,8 @@
 		<a href="Journey.php" class="navigationText" title="The Journey">The Journey</a>
 		<a href="About.php" class="navigationText" title="About Us">About Us</a>
 		<a href="Resources.php" class="navigationText" title="Resources">Resources</a>
+	</div>
+	<div class="navigationMenu">
 		<?php
 			if (isset($_SESSION["userUid"])) {
 				echo "<a href='Profile.php' class='navigationText' title='My Profile'>Profile</a>";
@@ -42,23 +44,19 @@
 			}
 		?> 
 	</div>
-	
-	<!-- <div class="dropdown navigationText" title="Information" style="position: relative;">Information <span class="arrow" style="font-size: 75%">⮟</span>
-			<a href="Info.php">
-				<span class="clickableBox"></span></a>
-			<div class="dropdownThings">
-				<span style="color: #ffd000; border-bottom:#FF530D 5px solid;">Quick Links</span>
-                <a href="Info.php#packages" title="Available Packages">Available Packages</a>
-				<a href="Info.php#ships" title="Gallery of our Ships">Our Ships</a>
-				<a href="Info.php#dining" title="Dining">Dining</a>
-				<a href="Info.php#entertainment" title="Entertainment">Entertainment</a>
-				<a href="Training.php" title="Special Training Information">Training</a>
-				<a href="Rules.php" title="Onboard Rules">Regulations</a>
-				<a href="Application.php" title="Application">Application</a>
-			</div>
-		</div>
-		<a href="Journey.php" class="navigationText" title="The Journey">The Journey</a>
-		<a href="About.php" class="navigationText" title="About Us">About Us</a>
-		<a href="Resources.php" class="navigationText" title="Resources">Resources</a> -->
+	<div onclick="myFunction(this)">
+		<div class="navigationBurger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+ 		</div>
+		<div class="menu"></div>
+	</div>
 </nav>
 </header>
+
+<script>
+	function myFunction(x) {
+	x.classList.toggle("toggle");
+	}
+</script>
