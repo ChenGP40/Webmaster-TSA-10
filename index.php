@@ -7,7 +7,8 @@ if (isset($_SESSION["userUid"])) {
 	echo "Hello there " . $_SESSION["userUid"] . "</php";
 }
 ?>
-			
+
+<body>
 <div class="imgWrapper">
 	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth">
 	<div class="imageText"><img src="images/Horizon Name Logo New.png"></div>

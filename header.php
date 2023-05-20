@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="Space Tourism">
@@ -22,26 +22,26 @@
 
 <header>
 <nav>
-<div class="navigation">
-	<a href="index.php" class="navigationText" title="Home"><img src="images/Horizon Name Logo Alternate.png" width="125vw"></a>
-	<span id="navMobile">
+	<div class="navigationLogo">
+		<a href="index.php" class="navigationText" title="Home"><img src="images/Horizon Name Logo Alternate.png" width="125vw"></a>
+	</div>
+	<div class="navigation">
 		<a href="Packages.php" class="navigationText" title="Available Packages">Packages</a>
 		<a href="Ships.php" class="navigationText" title="Gallery of our Ships">Ships</a>
 		<a href="Journey.php" class="navigationText" title="The Journey">The Journey</a>
 		<a href="About.php" class="navigationText" title="About Us">About Us</a>
 		<a href="Resources.php" class="navigationText" title="Resources">Resources</a>
-	<?php
-		if (isset($_SESSION["userUid"])) {
-			echo "<a href='Profile.php' class='navigationText' title='My Profile'>Profile</a>";
-			echo "<a href='includes/logoutInc.php' class='navigationText' title='Logout'>Logout</a>";
-		}
-		else {
-			echo"<a href='SignUp.php' class='navigationText' title='Sign up here!'>Sign Up</a>";
-			echo"<a href='Login.php' class='navigationText' title='Login here!'>Login</a>";
-		}
-	?> 
-	</span>
-</div>
+		<?php
+			if (isset($_SESSION["userUid"])) {
+				echo "<a href='Profile.php' class='navigationText' title='My Profile'>Profile</a>";
+				echo "<a href='includes/logoutInc.php' class='navigationText' title='Logout'>Logout</a>";
+			}
+			else {
+				echo"<a href='SignUp.php' class='navigationText' title='Sign up here!'>Sign Up</a>";
+				echo"<a href='Login.php' class='navigationText' title='Login here!'>Login</a>";
+			}
+		?> 
+	</div>
 	
 	<!-- <div class="dropdown navigationText" title="Information" style="position: relative;">Information <span class="arrow" style="font-size: 75%">⮟</span>
 			<a href="Info.php">
