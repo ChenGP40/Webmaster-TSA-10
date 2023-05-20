@@ -34,6 +34,24 @@ p {
     font-size: 125%;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 /* Image Systems */
 .imgWrapper {
     width: auto;
@@ -168,8 +186,8 @@ a:hover {
     background-color: black;
     right: 0%;
     transform: translate(100%, 0%);
-    transition-delay: 0.5s;
-    transition-duration: 1s;
+    transition-delay: .4s;
+    transition-duration: .4s;
 }
 
 .toggle .menu {
