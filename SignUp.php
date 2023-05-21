@@ -1,8 +1,19 @@
 <?php
-	include_once 'header.php';
+    ob_start();
+    include("header.php");
+    $buffer=ob_get_contents();
+    ob_end_clean();
+
+    $title = "Sign Up | Horizon";
+    $buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer);
+
+    echo $buffer;
 ?>
 
 <body id="info" style="background-image:url(images/galaxy-3608029_1920.jpg);">
+<br/>
+<br/>
+<br/>
 <div>
     <form action="includes/signupInc.php" method="post">
     <h2>Sign Up</h2>

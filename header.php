@@ -10,7 +10,7 @@
 <meta name="author" content="1425">
 <meta name="keywords" content="Space Tourism, Rockets, Exploration, Space, Cruise">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Webmaster 1425</title>
+<title>Horizon</title>
 <link rel="icon" type="image/x-icon" href="images/Logo.svg">
 <link rel="stylesheet" href="css/Space.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +50,26 @@
 			<div class="bar2"></div>
 			<div class="bar3"></div>
  		</div>
-		<div class="menu"></div>
+		<div class="menu">
+			<a href="Packages.php" class="menuText hidden" title="Available Packages">Packages</a>
+			<a href="Ships.php" class="menuText hidden" title="Gallery of our Ships">Ships</a>
+			<a href="Journey.php" class="menuText hidden" title="The Journey">The Journey</a>
+			<a href="About.php" class="menuText hidden" title="About Us">About Us</a>
+			<a href="Resources.php" class="menuText hidden" title="Resources">Resources</a>
+			<a href="Training.php" class="menuText" title="Training Procedures">Training</a>
+			<a href="Rules.php" class="menuText" title="Rules">Rules</a>
+			<a href="Shop.php" class="menuText" title="Check out Horizon products!">Shop</a>
+			<?php
+				if (isset($_SESSION["userUid"])) {
+					echo "<a href='Profile.php' class='menuText' title='My Profile'>Profile</a>";
+					echo "<a href='includes/logoutInc.php' class='menuText' title='Logout'>Logout</a>";
+				}
+				else {
+					echo"<a href='SignUp.php' class='menuText' title='Sign up here!'>Sign Up</a>";
+					echo"<a href='Login.php' class='menuText' title='Login here!'>Login</a>";
+				}
+			?> 
+		</div>
 	</div>
 </nav>
 </header>
