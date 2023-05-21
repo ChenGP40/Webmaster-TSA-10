@@ -2,7 +2,7 @@
 
 /*Desktop*/
 *{
-    border:red 1px transparent;
+    border:red 1px solid;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
     display: grid;
     min-height: 100%;
     grid-template-rows: 1fr auto;
-    background-image: linear-gradient(black, rgb(27 20 56));
+    background-color: black;
     font-family: 'Exo 2', sans-serif;
     font-size: 17px;
     color:white;
@@ -24,8 +24,15 @@ body {
     text-align: center;
 }
 
-p {
-    text-align: center;
+.gradientOverlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: linear-gradient(black,rgb(95, 67, 206));
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 25%;
 }
 
 .grid {
@@ -92,13 +99,6 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    font-weight: bold;
-    background: linear-gradient(to right,white, rgb(0, 174, 255));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 .imageText {
@@ -115,9 +115,19 @@ a:hover {
     -webkit-text-fill-color: transparent;
 }
 
-.logoText, .imageText {
+.logoText, .imageText, .gradientText {
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
+}
+
+.gradientText {
+    justify-self: center;
+    background: linear-gradient(to right,white, rgb(0, 174, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .help {
@@ -143,6 +153,11 @@ a:hover {
     border-radius: 25px;
 }
 
+.packageText {
+    position: absolute;
+    
+}
+
 /*Links*/
 /* .links {
     text-decoration: none;
@@ -161,6 +176,12 @@ a:hover {
     font-weight: bold;
     color:white;
     text-decoration: none;
+}
+
+.menuText {
+    font-weight: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .navigationText:hover, .menuText:hover {
@@ -241,8 +262,6 @@ a:hover {
     transition-delay: .4s;
     transition-duration: .4s;
     padding-top: 5em;
-    border-top: white 3px solid;
-    border-bottom: white 3px solid;
 }
 
 .menuOverlay {
@@ -271,13 +290,13 @@ a:hover {
     display: none;
 }
 
-.text {
+/* .text {
     color: white;
     font-size: 300%;
     background: rgba(0, 0, 0, 0.763);
     border:white 10px solid;
     padding:1em;
-}
+} */
 
 /*Footer*/
 .footer {
@@ -326,10 +345,11 @@ a:hover {
 
 /*Grid Systems*/
 .box {
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 7.5% 5em;
-    padding: 1.5em 10%;
+    padding: 1em 5%;
     background: linear-gradient(black, #2B3A42);
     font-weight: normal;
     font-size: 125%;
@@ -337,18 +357,10 @@ a:hover {
     border:white 2px solid;
 }
 
-#imageLink {
-    text-decoration: none;
-    color: white;
-}
-    #imageLink:hover {
-        background-color: #BDD4DE;
-        color: black;
-}
-
 .box > div {
     margin: 0.5em;
     border:white 2px solid;
+    border-radius: 25px;
 }
 .box > div:nth-of-type(1) {
     grid-column: 1 / 4;
@@ -359,20 +371,23 @@ a:hover {
     border: none;
 }
 .box > div:nth-of-type(2) {
-    grid-column: 1 / 2;
+    font-family: 'Barlow', sans-serif;
 }
 .box > div:nth-of-type(3) {
-    grid-column: 2 / 3;
+
 }
 .box > div:nth-of-type(4) {
-    grid-column: 3 / 4;
+
 }
 .box > div:nth-of-type(5) {
     grid-column: 1 / 4;
 }
 
-.nestedimage {
-    display: grid;
+.nestedImage {
+    /* display: grid; */
+    width: 22vw;
+    height: 22vw;
+    justify-self: center;
     background-color: black;
     /* padding-top: 1em; */
 }
@@ -471,26 +486,44 @@ input {
     transform: translate(-50%, -85%);
     padding: 1em;
     margin-top: 2em;
-    background-color: rgb(27, 143, 27);
-    border: none;
+    background-color: transparent;
+    border: white 2px solid;
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
 
+.home:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
 
 /*Animations*/
 .reveal {
     position: absolute;
-    /* transform: translateY(150px); */
+    transform: translate(-50%, 10%);
     opacity: 0;
     transition: 1s all ease;
 }
 
 .reveal.active {
-    /* transform: translateY(0); */
+    transform: translate(-50%, -80%);
     opacity: 1;
 }
+
+.revealLogo {
+    position: absolute;
+    transform: translate(-50%, 10%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealLogo.active {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
     .active.fromLeft {
         animation: fade-left 0.8s ease-in;
     }

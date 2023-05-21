@@ -25,19 +25,24 @@ function reveal() {
     }
   }
 
-//Navigation
-// function nav() {
-//   if ( document.getElementById(".toggle").checked === true ) {
-//       x.classList.toggle("toggle");
-//     } else {
-//       exit();
-//     }  
-// }
+function revealLogo() {
+    var reveals = document.querySelectorAll(".revealLogo");
+  
+    for (var j = 0; j < reveals.length; j++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[j].getBoundingClientRect().top;
+      var elementVisible = 20;
 
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[j].classList.add("active");
+      }
+    }
+  }
    
   window.addEventListener("load", reveal);
   window.addEventListener("scroll", reveal);
-  window.addEventListener("scroll", nav);
+  window.addEventListener("load", revealLogo);
+  window.addEventListener("scroll", revealLogo);
 
   
  

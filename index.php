@@ -19,8 +19,8 @@ if (isset($_SESSION["userUid"])) {
 <body>
 <div class="imgWrapper">
 	<img src="images/earth-1756274_1920.jpg" alt="Breathtaking Image of Earth" draggable="false">
-	<div class="imageLogo reveal"><img src="images/Horizon Name Logo New.png" draggable="false"></div>
-	<div class="logoText typewriter">TOGETHER TOWARDS THE FUTURE</div>
+	<div class="imageLogo revealLogo"><img src="images/Horizon Name Logo New.png" draggable="false"></div>
+	<div class="logoText gradientText typewriter">TOGETHER TOWARDS THE FUTURE</div>
 </div>
 <div class="imgWrapper">
 	<img src="images/Spiral Galaxy.jpg" alt="Breathtaking Image of Earth" draggable="false">
@@ -31,10 +31,10 @@ if (isset($_SESSION["userUid"])) {
 </div>
 <div class="imgWrapper">
 	<img src="images/Launched Rocket.jpg" alt="Breathtaking Image of Earth" draggable="false">
-	<div class="imageText">
+	<div class="imageText reveal">
 		Take a look at our ships!
 	</div>
-	<button class="home">Take me there!</button>
+	<button onclick="window.location.href = 'Ships.php';" class="home">Take me there!</button>
 </div>
 </body>
 
