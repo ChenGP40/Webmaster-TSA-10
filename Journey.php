@@ -2,18 +2,20 @@
 	include_once 'header.php';
 ?>
 
-<body id="info" style="background-image:url(Starry\ Night.svg);">
-<br/><br/><br/>
-<div class="boxinfo">
-	<div>
-		<span style="border-bottom:#FF530D 5px solid;">The Journey</span>
-	</div>
+<body id="info" style="background-image:url(images/Starry\ Night.svg);">
+<div class="gradientOverlay"></div>
+<br/><br/><br/><br/>
+<div class="box">
+	<div class="gradientText typewriter">THE JOURNEY</div>
+	<div></div>
+	<div></div>
+	<div></div>
 	<div>
 	    Feeling overwhelmed? Don’t be. This page consists of a step-by-step guide to help you traverse through this once-in-a-lifetime experience!
     </div>
 </div> 
 
-<div class="boxJourney reveal fadeIn">
+<div class="boxJourney">
 	<div>
 	    <span class="titleText" style="margin: 0">STEP 1: Pick a Package</span><br/><br/>
 		Horizon features three different cruises: “Around the World,” “Amongst the Planets,” and “A Stellar Journey.” 
@@ -24,11 +26,11 @@
 		Note: Both of these cruises take a significant amount of time, so be sure to plan accordingly!
     </div>
 	<div>
-		<img src="earth-11009.jpg">
+		<img src="images/earth-11009.jpg" style="max-height: 40vh;">
     </div>
 </div>
 
-<div class="boxJourney reveal fadeIn">
+<div class="boxJourney">
 	<div>
 		<span class="titleText" style="margin: 0">STEP 2: Undergo Training</span><br/><br/>
 		Once you have successfully booked and paid for a cruise, you will messaged with additional information about the trip, as well as important regulations and training procedures.
@@ -39,7 +41,7 @@
     </div>
 </div>
 
-<div class="boxJourney reveal fadeIn">
+<div class="boxJourney">
 	<div>
 		<span class="titleText" style="margin: 0">STEP 3: Pre-Launch</span><br/><br/>
 		Once it is time to leave for the cosmos, you will travel to the Horizon Launch Site located at the Guiana Space Centre in French Guiana, South America.
@@ -51,14 +53,14 @@
     </div>
 </div>
 
-<div class="boxJourney reveal fadeIn">
+<div class="boxJourney">
 	<div>
 		<span class="titleText" style="margin: 0">STEP 4: Launch</span><br/><br/>
 		Follow the directions given by Horizon employees to ensure a quick and safe launch.
 		After you are seated, all you have to do is sit back, relax, and enjoy the rest of your journey!
     </div>
 	<div>
-		<img src="Logo.svg">
+		<img src="images/Rocket.jpg" style="max-height: 40vh;">
     </div>
 </div>
 </body>

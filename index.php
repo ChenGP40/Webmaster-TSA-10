@@ -34,7 +34,7 @@ if (isset($_SESSION["userUid"])) {
 	<div class="imageText reveal">
 		OUR SHIPS
 	</div>
-	<button onclick="window.location.href = 'Ships.php';" class="home reveal">Take me there!</button>
+	<button onclick="window.location.href = 'Ships.php';" class="home reveal">Discover</button>
 </div>
 </body>
 

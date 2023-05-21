@@ -2,18 +2,33 @@
 	include_once 'header.php';
 ?>
 
-<body id="info" style="background-image:url(Starry\ Night.svg);">
-<br/><br/><br/>
-<div class="boxinfo">
-	<div>
-		<span style="border-bottom:#FF530D 5px solid;">About Horizon</span>
-	</div>
-	<div>
-		HORIZON was founded in 2023 to make what people thought was impossible, possible: commercial space travel. 
-		After many years of trials and tribulations, we are proud to have fulfilled our dreams. 
-		A huge thank you goes to our designers, engineers, and technicians. Nothing would have been possible without them.
-	</div>
+<body id="info" style="background-image:url(images/Starry\ Night.svg);">
+<div class="gradientOverlay"></div>
+<br/><br/><br/><br/>
+<div class="box">
+	<div class="gradientText typewriter">ABOUT HORIZON</div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div><span style="font-size: 125%">
+		Horizon is evolving the way the world moves. 
+		Our goal is to provide humanity with an equal opportunity to touch the unknown as they travel the cosmos. 
+		Travelers will experience high-quality services that will foster the curiosity of all.
+		<br/>
+		<br/>
+		<i>"Together Towards the Future"</i> - Horizon</span>
+    </div>
 </div> 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 </body>
 
 <?php

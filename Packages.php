@@ -28,13 +28,13 @@ if (isset($_SESSION["userUid"])) {
 		<img src="images/earth-11009.jpg" class="nestedImage" alt="The Earth">
 		<button class="packageText revealLogo" onclick="window.location.href = 'PackageATW.php';">AROUND THE WORLD</button>
 	</div>
-	<div class="nestedImage"><a href="PackageATP.php" id="imageLink">
-		<br/>Amongst the Planets<br/><br/>
-        <img src="images/Planets.png" alt="The Planets"></a>
+	<div class="position">
+		<img src="images/Planets.png" class="nestedImage" alt="The Planets">
+		<button class="packageText revealLogo" onclick="window.location.href = 'PackageATP.php';">AMONGST THE PLANETS</button>
 	</div>
-	<div class="nestedImage"><a href="PackageASJ.php" id="imageLink">
-        <br/>A Stellar Journey<br/><br/>
-		<img src="images/Nebula.png" alt="Nebula"></a>
+	<div class="position">
+		<img src="images/Nebula.png" class="nestedImage" alt="A Nebula">
+		<button class="packageText revealLogo" onclick="window.location.href = 'PackageASJ.php';">A STELLAR JOURNEY</button>
 	</div>
 	<div style="padding: 1em;">
         Choose from one of our three extravagant packages to find your next dream vacation!<br/> Sail into mankind's next frontier unlike ever before.
