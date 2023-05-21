@@ -24,11 +24,9 @@ if (isset($_SESSION["userUid"])) {
 <br/>
 <div class="box">
 	<div class="gradientText typewriter">AVAILABLE PACKAGES</div>
-	<div class="nestedImage">
-		<img src="images/earth-11009.jpg" alt="The Earth">
-		<div class="packageText">Around the World</div>
-        
-		<button href="PackageATW.php">Go<button>
+	<div class="position">
+		<img src="images/earth-11009.jpg" class="nestedImage" alt="The Earth">
+		<button class="packageText revealLogo" onclick="window.location.href = 'PackageATW.php';">AROUND THE WORLD</button>
 	</div>
 	<div class="nestedImage"><a href="PackageATP.php" id="imageLink">
 		<br/>Amongst the Planets<br/><br/>

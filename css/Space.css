@@ -153,10 +153,7 @@ a:hover {
     border-radius: 25px;
 }
 
-.packageText {
-    position: absolute;
-    
-}
+
 
 /*Links*/
 /* .links {
@@ -358,9 +355,6 @@ a:hover {
 }
 
 .box > div {
-    margin: 0.5em;
-    border:white 2px solid;
-    border-radius: 25px;
 }
 .box > div:nth-of-type(1) {
     grid-column: 1 / 4;
@@ -383,14 +377,21 @@ a:hover {
     grid-column: 1 / 4;
 }
 
+.position {
+    position: relative;
+}
+
 .nestedImage {
-    /* display: grid; */
     width: 22vw;
     height: 22vw;
     justify-self: center;
     background-color: black;
-    /* padding-top: 1em; */
+    margin: 0.5em;
+    border:white 2px solid;
+    border-radius: 25px;
 }
+
+
 
 /*Other Page Systems*/
 .titleText {
@@ -484,8 +485,18 @@ input {
     top: 85%;
     left: 50%;
     transform: translate(-50%, -85%);
-    padding: 1em;
     margin-top: 2em;
+}
+
+.packageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.home, .packageText {
+    padding: 1em;
     background-color: transparent;
     border: white 2px solid;
     color: white;
@@ -493,7 +504,7 @@ input {
     font-size: 20px;
 }
 
-.home:hover {
+.home:hover, .packageText:hover {
     cursor: pointer;
     background-color: white;
     color: black;

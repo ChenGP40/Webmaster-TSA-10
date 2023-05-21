@@ -25,16 +25,16 @@ if (isset($_SESSION["userUid"])) {
 <div class="imgWrapper">
 	<img src="images/Spiral Galaxy.jpg" alt="Breathtaking Image of Earth" draggable="false">
 	<div class="imageText reveal">
-		Check out our amazing packages!
+		OUR PACKAGES	
 	</div>
-	<button class="home">Take me there!</button>
+	<button onclick="window.location.href = 'Packages.php';" class="home reveal">Take me there!</button>
 </div>
 <div class="imgWrapper">
 	<img src="images/Launched Rocket.jpg" alt="Breathtaking Image of Earth" draggable="false">
 	<div class="imageText reveal">
-		Take a look at our ships!
+		OUR SHIPS
 	</div>
-	<button onclick="window.location.href = 'Ships.php';" class="home">Take me there!</button>
+	<button onclick="window.location.href = 'Ships.php';" class="home reveal">Take me there!</button>
 </div>
 </body>
 
