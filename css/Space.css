@@ -53,11 +53,12 @@ p {
 }
 
 /* Image Systems */
-.imgWrapper {
-    width: 99vw;
+.imgWrapper, .imgWrapper > img {
+    width: 100vw;
     height: 100vh;
-
+    scroll-snap-align: start none;
     background-color: black;
+    position: relative;
 }
 
 img {
@@ -74,13 +75,49 @@ a:hover {
     color:#ffe675;
 }
 
-.imageText {
+.imageLogo {
     position: absolute;
     max-width: 75%;
     max-height: 75%;
-    top: 38%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.logoText {
+    position: absolute;
+    max-width: 75%;
+    max-height: 75%;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right,white, rgb(0, 174, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.imageText {
+    position: absolute;
+    /* max-width: 75%;
+    max-height: 75%; */
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-size: 50px;
+    background: linear-gradient(to bottom,rgb(250, 145, 59), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logoText, .imageText {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
 }
 
 .help {
@@ -146,7 +183,6 @@ a:hover {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 1.5em);
-    /* background-image: linear-gradient(black, rgb(27 20 56)); */
 }
 
 .navigationMenu {
@@ -163,7 +199,7 @@ a:hover {
     display: block;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     right: 1.5%;
     transform: translate(0%, 1.5em);
@@ -195,7 +231,7 @@ a:hover {
 /* Toggled Menu */
 .menu {
     display: hidden;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     width: 20%;
     height: 100vh;
@@ -209,9 +245,22 @@ a:hover {
     border-bottom: white 3px solid;
 }
 
+.menuOverlay {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .toggle .menu {
     display: block;
     transform: translate(-0%, 0%);
+}
+
+.toggle .menuOverlay {
+    display: block;
 }
 
 .menuText {
@@ -415,17 +464,31 @@ input {
     font-size: 20px;
 }
 
+.home {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    padding: 1em;
+    margin-top: 2em;
+    background-color: rgb(27, 143, 27);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 /*Animations*/
 .reveal {
-    position: relative;
-    transform: translateY(150px);
+    position: absolute;
+    /* transform: translateY(150px); */
     opacity: 0;
     transition: 1s all ease;
 }
 
 .reveal.active {
-    transform: translateY(0);
+    /* transform: translateY(0); */
     opacity: 1;
 }
     .active.fromLeft {
@@ -477,6 +540,18 @@ input {
           opacity: 1;
         }
       }  
+
+.typewriter{
+    animation: typewriter 3s steps(44) 1s 1 normal both;
+}
+    @keyframes typewriter{
+        from {
+          width: 0;
+        }
+        to {
+          width: 24em;
+        }
+    }
 
 /*Larger Device*/
 @media screen and (max-width: 1300px) {

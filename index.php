@@ -18,18 +18,23 @@ if (isset($_SESSION["userUid"])) {
 
 <body>
 <div class="imgWrapper">
-	<img src="images/earth-1756274_1920.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth" draggable="false">
-	<div class="imageText"><img src="images/Horizon Name Logo New.png" draggable="false"></div>
+	<img src="images/earth-1756274_1920.jpg" alt="Breathtaking Image of Earth" draggable="false">
+	<div class="imageLogo reveal"><img src="images/Horizon Name Logo New.png" draggable="false"></div>
+	<div class="logoText typewriter">TOGETHER TOWARDS THE FUTURE</div>
 </div>
 <div class="imgWrapper">
-	<img src="images/Spiral Galaxy.jpg" style="filter: blur(0px);" alt="Breathtaking Image of Earth" draggable="false">>
-	<div class="imageText">
+	<img src="images/Spiral Galaxy.jpg" alt="Breathtaking Image of Earth" draggable="false">
+	<div class="imageText reveal">
 		Check out our amazing packages!
 	</div>
+	<button class="home">Take me there!</button>
 </div>
 <div class="imgWrapper">
-	<img src="images/Launched Rocket.jpg" style="filter: blur(1px);" alt="Breathtaking Image of Earth" draggable="false">
-	<div class="imageText"></div>
+	<img src="images/Launched Rocket.jpg" alt="Breathtaking Image of Earth" draggable="false">
+	<div class="imageText">
+		Take a look at our ships!
+	</div>
+	<button class="home">Take me there!</button>
 </div>
 </body>
 

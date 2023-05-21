@@ -70,6 +70,7 @@
 				}
 			?> 
 		</div>
+		<div class="menuOverlay"></div>
 	</div>
 </nav>
 </header>

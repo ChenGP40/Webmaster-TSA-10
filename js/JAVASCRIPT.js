@@ -24,5 +24,20 @@ function reveal() {
       }
     }
   }
+
+//Navigation
+// function nav() {
+//   if ( document.getElementById(".toggle").checked === true ) {
+//       x.classList.toggle("toggle");
+//     } else {
+//       exit();
+//     }  
+// }
+
+   
   window.addEventListener("load", reveal);
   window.addEventListener("scroll", reveal);
+  window.addEventListener("scroll", nav);
+
+  
+ 
