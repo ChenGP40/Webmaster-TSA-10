@@ -1,5 +1,13 @@
 <?php
-	include_once 'header.php';
+    ob_start();
+    include("header.php");
+    $buffer=ob_get_contents();
+    ob_end_clean();
+
+    $title = "Journey | Horizon";
+    $buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer);
+
+    echo $buffer;
 ?>
 
 <body id="info" style="background-image:url(images/Starry\ Night.svg);">
@@ -26,7 +34,7 @@
 		Note: Both of these cruises take a significant amount of time, so be sure to plan accordingly!
     </div>
 	<div>
-		<img src="images/earth-11009.jpg" style="max-height: 40vh;">
+		<img src="earth-11009.jpg" style="max-height: 40vh;">
     </div>
 </div>
 

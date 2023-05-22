@@ -1,14 +1,26 @@
 <?php
-	include_once 'header.php';
+    ob_start();
+    include("header.php");
+    $buffer=ob_get_contents();
+    ob_end_clean();
+
+    $title = "Login | Horizon";
+    $buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer);
+
+    echo $buffer;
 ?>
 
-<div class="login">
-    <h2>Login</h2>
-    <form action="includes/loginInc.php" method="post">
-        <input type="text" name="uid" placeholder="Username/Email...">
-        <input type="password" name="pwd" placeholder="Password...">
-        <button type="submit" name="submit">Login</button>
-    </form>
+<body id="info" style="background-image:url(images/galaxy-3608029_1920.jpg);">
+<br/><br/><br/><br/><br/><br/>
+
+<form action="includes/loginInc.php" method="post">
+<h2>Login</h2>
+<hr>
+    <input type="text" name="uid" placeholder="Username/Email...">
+    <input type="password" name="pwd" placeholder="Password...">
+    <button type="submit" name="submit" id="signUp">Login</button>
+    <p>Don't have an account? <a href="SignUp.php">Sign up</a></p>
+</form>
 
     <?php
     if (isset($_GET["error"])) {
@@ -23,7 +35,3 @@
 </div>
 
 </body>
-
-<?php
-	include_once 'footer.php';
-?>

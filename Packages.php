@@ -10,12 +10,6 @@
     echo $buffer;
 ?>
 
-<?php
-if (isset($_SESSION["userUid"])) {
-	echo "Hello there " . $_SESSION["userUid"] . "</php";
-}
-?>
-
 <body id="info" style="background-image:url(images/Starry\ Night.svg);">
 <div class="gradientOverlay"></div>
 <br/>
@@ -25,15 +19,15 @@ if (isset($_SESSION["userUid"])) {
 <div class="box">
 	<div class="gradientText typewriter">AVAILABLE PACKAGES</div>
 	<div class="position">
-		<img src="images/earth-11009.jpg" class="nestedImage" alt="The Earth">
+		<img src="earth-11009.jpg" class="nestedImage" alt="The Earth">
 		<button class="packageText revealLogo" onclick="window.location.href = 'PackageATW.php';">AROUND THE WORLD</button>
 	</div>
 	<div class="position">
-		<img src="images/Planets.png" class="nestedImage" alt="The Planets">
+		<img src="Planets.png" class="nestedImage" alt="The Planets">
 		<button class="packageText revealLogo" onclick="window.location.href = 'PackageATP.php';">AMONGST THE PLANETS</button>
 	</div>
 	<div class="position">
-		<img src="images/Nebula.png" class="nestedImage" alt="A Nebula">
+		<img src="Nebula.png" class="nestedImage" alt="A Nebula">
 		<button class="packageText revealLogo" onclick="window.location.href = 'PackageASJ.php';">A STELLAR JOURNEY</button>
 	</div>
 	<div style="padding: 1em;">

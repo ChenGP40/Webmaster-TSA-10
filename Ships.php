@@ -4,16 +4,10 @@
     $buffer=ob_get_contents();
     ob_end_clean();
 
-    $title = "Home | Horizon";
+    $title = "Ships | Horizon";
     $buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer);
 
     echo $buffer;
-?>
-
-<?php
-if (isset($_SESSION["userUid"])) {
-	echo "Hello there " . $_SESSION["userUid"] . "</php";
-}
 ?>
 
 <body id="info" style="background-image:url(images/Starry\ Night.svg);">

@@ -5,3 +5,32 @@ CREATE TABLE users (
     usersUid varchar(128) not null,
     usersPwd varchar(128) not null
 );
+
+CREATE TABLE IF NOT EXISTS `products` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` varchar(200) NOT NULL,
+	`desc` text NOT NULL,
+	`price` decimal(7,2) NOT NULL,
+	`rrp` decimal(7,2) NOT NULL DEFAULT '0.00',
+	`quantity` int(11) NOT NULL,
+	`img` text NOT NULL,
+	`date_added` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+INSERT INTO `products` (`id`, `name`, `desc`, `price`, `rrp`, `quantity`, `img`, `date_added`) VALUES
+(1, 'Around the World', '', '9999.99', '0.00', 100, 'earth-11009.jpg', '2022-12-13 17:55:22'),
+(2, 'Amongst the Planets', '', '12999.99', '0.00', 100, 'Planets.png', '2022-12-31 18:47:56'),
+(3, 'A Stellar Journey', '', '15999.99', '0.00', 100, 'Nebula.png', '2023-02-14 17:42:04');
+
+<?php
+$serverName = "sql200.epizy.com";
+$dBUsername = "epiz_34136559";
+$dBPassword = "rsd13252";
+$dBName = "epiz_34136559_webmaster";
+
+$conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}

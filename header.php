@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	include_once 'functions.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
 <header>
 <nav>
 	<div class="navigationLogo">
-		<a href="index.php" class="navigationText" title="Home"><img src="images/Horizon Name Logo Alternate.png" width="125vw"></a>
+		<a href="home.php" class="navigationText" title="Home"><img src="images/Horizon Name Logo Alternate.png" width="125vw"></a>
 	</div>
 	<div class="navigation">
 		<a href="Packages.php" class="navigationText" title="Available Packages">Packages</a>
@@ -38,7 +38,8 @@
 	<div class="navigationMenu">
 		<?php
 			if (isset($_SESSION["userUid"])) {
-				echo "<a href='Profile.php' class='navigationText' title='My Profile'>Profile</a>";
+				echo "<a href='index.php?page=products' class='navigationText' title='Shop Horizon'>Shop</a>";
+				echo "<a href='index.php?page=cart' class='navigationText' title='My Cart'>My Cart</a>";
 				echo "<a href='includes/logoutInc.php' class='navigationText' title='Logout'>Logout</a>";
 			}
 			else {
@@ -61,10 +62,10 @@
 			<a href="Resources.php" class="menuText hidden" title="Resources">Resources</a>
 			<a href="Training.php" class="menuText" title="Training Procedures">Training</a>
 			<a href="Rules.php" class="menuText" title="Rules">Rules</a>
-			<a href="Shop.php" class="menuText" title="Check out Horizon products!">Shop</a>
+			<a href="index.php?page=products" class="menuText" title="Check out Horizon products!">Shop</a>
 			<?php
 				if (isset($_SESSION["userUid"])) {
-					echo "<a href='Profile.php' class='menuText' title='My Profile'>Profile</a>";
+					echo "<a href='index.php?page=cart' class='menuText' title='My Cart'>My Cart</a>";
 					echo "<a href='includes/logoutInc.php' class='menuText' title='Logout'>Logout</a>";
 				}
 				else {

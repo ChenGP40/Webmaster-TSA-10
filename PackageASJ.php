@@ -5,18 +5,11 @@
 <body>
 <div class="imgWrapper">
 	<img src="images/Nebula2.png" alt="Nebula" draggable="false">
-	<div class="imageLogo revealLogo"><img src="images/Horizon Name Logo New.png" draggable="false"></div>
-	<div class="logoText gradientText typewriter">TOGETHER TOWARDS THE FUTURE</div>
+	<div class="imageLogo revealLogo">A STELLAR JOURNEY</div>
+	<div class="logoText gradientText typewriter">Welcome to Deep Space</div>
 </div>
-	<div class="reveal fadeIn" style="background-color: black;">
-		<img src="Nebula2.png" style="filter: blur(3px); padding-bottom: 2em;" alt="Breathtaking Image of Earth">
-		<div class="imageText text">A Stellar Journey</div>
-	</div>
 
-<div class="boxinfo reveal fadeIn" style="padding-bottom: 3em">
-	<div>
-		<span style="border-bottom:#FF530D 5px solid;">The "A Stellar Journey" Package</span>
-	</div>
+<div class="boxinfo" style="padding-bottom: 3em">
 	<div>
 		"A Stellar Journey" is a four week long trip on Horizon's most state-of-the-art ship, the Agro. 
 		During this trip, you will leave our little solar system behind and venture into our neighboring galaxy Andromeda. 
@@ -70,28 +63,6 @@
 </div>
 </body>
 
-<footer class="footer">
-	<div class="footerOne">
-		<img class="footerimg" src="Logo.svg">
-	</div>
-	<div class="footerTwo"><i>
-		"One small step for man, one giant leap for mankind."</i><br/>
-		- Neil Armstrong
-	</div>
-	<div class="footerThree">
-		<span style="color:#ffd000; border-bottom:#FF530D 5px solid;">Explore</span><br/>
-		<span style="font-size: 75%" ><a href="index.html" class="links">Home</a><br/>
-		<a href="Info.html" class="links">Information</a><br/>
-		<a href="Journey.html" class="links">The Journey</a><br/>
-		<a href="About.html" class="links">About Us</a><br/>
-		<a href="Resources.html" class="links">Resources</a></span>
-	</div>
-	<div class="footerFour">
-		<span style="color:#ffd000; border-bottom:#FF530D 5px solid;">Contact</span><br/>
-		<span style="font-size: 75%"><a href="https://twitter.com/_Horizon_Space" class="links">Twitter</a><br/>
-	</div>
-	<div class="footerFive">
-    	<a class="links" style="border-bottom:#FF530D 5px solid;" href="Help.html">If you have any questions or need help, please click here.</a>
-	</div>
-</footer>
-</html>
+<?php
+	include_once 'footer.php';
+?>
