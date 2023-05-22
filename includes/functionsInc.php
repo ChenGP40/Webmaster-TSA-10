@@ -102,7 +102,7 @@ function loginUser($conn, $username, $pwd) {
     $uidExists = uidExists($conn, $username, $username);
 
     if ($uidExists == false) {
-        header("location: ../login.php?error=wrongLogin");
+        header("location: ../Login.php?error=wrongLogin");
         exit();
     }
 
@@ -110,14 +110,14 @@ function loginUser($conn, $username, $pwd) {
     $checkPwd = password_verify($pwd, $pwdHashed);
 
     if ($checkPwd === false) {
-        header("location: ../login.php?error=wrongLogin");
+        header("location: ../Login.php?error=wrongLogin");
         exit();
     }
     else if ($checkPwd === true) {
         session_start();
         $_SESSION["userId"] = $uidExists["usersId"];
         $_SESSION["userUid"] = $uidExists["usersUid"];
-        header("location: ../index.php");
+        header("location: ../home.php");
         exit();
     }
 }

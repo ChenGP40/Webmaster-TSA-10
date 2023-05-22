@@ -202,17 +202,6 @@ a:hover {
     border: #2B3A42 15px solid;
     border-radius: 25px;
 }
-/* .form {
-    justify-self: center;
-    min-width: 700px;
-    min-height: 535px;
-    background: #3F5765;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding-top: 1%;
-    border: #2B3A42 15px solid;
-    border-radius: 25px;
-} */
 
 /*Navigation Bar*/     
 .navigationText, .menuText {
@@ -486,7 +475,7 @@ a:hover {
         justify-self: center;
     }
 
-form {
+.signUp {
     display: grid;
     margin: 0 35% 4em;
     padding: 1.5em 5%;

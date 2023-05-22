@@ -11,9 +11,9 @@
 <meta name="keywords" content="Space Tourism, Rockets, Exploration, Space, Cruise">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Horizon</title>
-<link rel="icon" type="image/x-icon" href="images/Logo.png">
-<link rel="stylesheet" href="css/Space.css">
-<link rel="preload" as="style" href="css/Space.css">
+<link rel="icon" type="image/x-icon" href="Logo.png">
+<link rel="stylesheet" href="Space.css">
+<link rel="preload" as="style" href="Space.css">
 <link rel="preload" as="image" href="images/earth-1756274_1920.jpg">
 <link rel="preload" as="image" href="images/Horizon Name Logo New.png">
 <link rel="preload" as="image" href="images/images/Starry\ Night.svg">
@@ -73,7 +73,7 @@
 					echo"<a href='Login.php' class='menuText' title='Login here!'>Login</a>";
 				}
 			?> 
-			<img src="images/Logo.png">
+			<img src="Logo.png">
 		</div>
 		<div class="menuOverlay"></div>
 	</div>

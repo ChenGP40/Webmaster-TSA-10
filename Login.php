@@ -13,7 +13,7 @@
 <body id="info" style="background-image:url(images/galaxy-3608029_1920.jpg);">
 <br/><br/><br/><br/><br/><br/>
 
-<form action="includes/loginInc.php" method="post">
+<form class="signUp" action="includes/loginInc.php" method="post">
 <h2>Login</h2>
 <hr>
     <input type="text" name="uid" placeholder="Username/Email...">

@@ -68,7 +68,7 @@
 		After you are seated, all you have to do is sit back, relax, and enjoy the rest of your journey!
     </div>
 	<div>
-		<img src="images/Rocket.jpg" style="max-height: 40vh;">
+		<img src="Rocket.jpg" style="max-height: 40vh;">
     </div>
 </div>
 </body>

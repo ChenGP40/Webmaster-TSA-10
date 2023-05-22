@@ -1,112 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="Space Tourism">
-<meta name="author" content="2103-901">
-<meta name="keywords" content="Space Tourism, NASA, Rockets, Exploration, Space, Cruise">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Webmaster 2103-901</title>
-<link rel="icon" type="image/x-icon" href="Logo.svg">
-<link rel="stylesheet" href="Space.css">
-<link href='https://fonts.googleapis.com/css?family=Chivo Mono' rel='stylesheet'>
-<script src="JAVASCRIPT.js"></script>
-</head>
+<?php
+    ob_start();
+    include("header.php");
+    $buffer=ob_get_contents();
+    ob_end_clean();
 
-<header>
-<nav>
-<div class="navigation">
-	<div class="menu navigationText">
-		<a onclick="toggleMenu()">Menu</a>
-	</div>
-	<div id="navMobile">
-		<a href="index.html" class="navigationText" title="Home" style="border: none;"><img src="Horizon Name Logo Alternate.png" width="125vw"></a>
-		<div class="dropdown navigationText" title="Information" style="position: relative;">Information <span class="arrow" style="font-size: 75%">⮟</span>
-			<a href="Info.html">
-				<span class="clickableBox"></span></a>
-			<div class="dropdownThings">
-				<span style="color: #ffd000; border-bottom:#FF530D 5px solid;">Quick Links</span>
-                <a href="Info.html#packages" title="Available Packages">Available Packages</a>
-				<a href="Info.html#ships" title="Gallery of our Ships">Our Ships</a>
-				<a href="Info.html#dining" title="Dining">Dining</a>
-				<a href="Info.html#entertainment" title="Entertainment">Entertainment</a>
-				<a href="Training.html" title="Special Training Information">Training</a>
-				<a href="Rules.html" title="Onboard Rules">Regulations</a>
-				<a href="Application.html" title="Application">Application</a>
-			</div>
-		</div>
-		<a href="Journey.html" class="navigationText" title="The Journey">The Journey</a>
-		<a href="About.html" class="navigationText" title="About Us">About Us</a>
-		<a href="Resources.html" class="navigationText" title="Resources">Resources</a>
+    $title = "Rules | Horizon";
+    $buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer);
+
+    echo $buffer;
+?>
+
+<body id="info" style="background-image:url(images/Starry\ Night.svg);">
+<div class="gradientOverlay"></div>
+<br/><br/><br/><br/><br/>
+
+<div class="box" style="margin-bottom: 0;">
+	<div class="gradientText typewriter">REGULATIONS</div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div style="padding: 1em;">
+		In order for you to board the ship to experience this amazing journey into outer space, you must follow the regulations listed here.
 	</div>
 </div>
-</nav>
-</header>
 
-<body id="info" style="background-image:url(Starry\ Night.svg);">
-<br/><br/><br/>
-<div class="boxinfo reveal fadeIn" style="padding-bottom: 3em">
+<div style="font-weight: normal; border: #BDD4DE 3px dashed; margin: 0 auto; padding: 2em; background-color: rgb(0, 0, 0, .25)">
 	<div>
-		<span style="border-bottom:#FF530D 5px solid;">Regulations</span>
-	</div>
+	<span style="font-weight: bold; font-size: 125%;">On-Board Rules:</span><br/><br/>
+		<ul style="text-align: left; padding-left: 1.5em; padding-top: 0.5em; padding-bottom: 0.5em">
+			<li>No illegal substances.</li>
+			<li>No entering Employee Only locations.</li>
+			<li>Do not touch glass walls.</li>
+			<li>Listen to all instructions and directives from Horizon employees.</li>
+			<li>Do not interfere with any Horizon ship mechanisms.</li>
+			<li>One 50-pound luggage item and one carry one item per person.</li>
+			<li>No pets of any type allowed.</li>
+			<li>All passengers must be prepared for hypersleep by 10:45 PM.</li>
+			<li>Any injuries should be reported to Horizon crew members.</li>
+			<li>No food or drink in zero-gravity areas.</li>
+		</ul>
+	</div><br/>
+	<hr><br/>
 	<div>
-		In order for you to get on the ship to experience this amazing journey into outer space, you must follow the regulations listed here.
-	</div><br/><br/>
-	<div style="font-weight: normal; border: #BDD4DE 3px dashed;">
-		<div class="reveal fadeIn">
-			<span style="font-weight: bold; font-size: 125%;">On Board Rules:</span><br/>
-			<ul style="text-align: left; padding-left: 1.5em; padding-top: 0.5em; padding-bottom: 0.5em">
-				<li>No illegal substances.</li>
-				<li>No entering Employee Only locations.</li>
-				<li>Do not touch glass walls.</li>
-				<li>Listen to all instructions and directives from Horizon employees.</li>
-				<li>Do not interfere with any Horizon ship mechanisms.</li>
-				<li>One 50-pound luggage item and one carry one item per person.</li>
-				<li>No pets of any type allowed.</li>
-				<li>All passengers must be prepared for hypersleep by 10:45 PM.</li>
-				<li>Any injuries should be reported to Horizon crew members.</li>
-				<li>No food or drink in zero-gravity areas.</li>
-			</ul>
-			<br/><br/>
-			<span style="font-weight: bold; font-size: 125%;">Banned Items List:</span><br/>
-            <ul style="text-align: left; padding-left: 1.5em; padding-top: 0.5em; padding-bottom: 0.5em">
-                <li>Weapons of any kind.</li>
-                <li>Any non-approved medication or drugs.</li>
-                <li>Ammunition.</li>
-                <li>Cigarettes.</li>
-                <li>E-cigarettes.</li>
-                <li>Explosives.</li>
-                <li>Lighters.</li>
-                <li>Any other item our security team rejects.</li>
-			</ul>
-		</div>  
-	</div> 
-</div>
-</body>
-
-<footer class="footer">
-	<div class="footerOne">
-		<img class="footerimg" src="Logo.svg">
-	</div>
-	<div class="footerTwo"><i>
-		"One small step for man, one giant leap for mankind."</i><br/>
-		- Neil Armstrong
-	</div>
-	<div class="footerThree">
-		<span style="color:#ffd000; border-bottom:#FF530D 5px solid;">Explore</span><br/>
-		<span style="font-size: 75%" ><a href="index.html#sectionA" class="links">Home</a><br/>
-		<a href="Info.html" class="links">Information</a><br/>
-		<a href="Journey.html" class="links">The Journey</a><br/>
-		<a href="About.html" class="links">About Us</a><br/>
-		<a href="Resources.html" class="links">Resources</a></span>
-	</div>
-	<div class="footerFour">
-		<span style="color:#ffd000; border-bottom:#FF530D 5px solid;">Contact</span><br/>
-		<span style="font-size: 75%"><a href="https://twitter.com/_Horizon_Space" class="links">Twitter</a><br/>
-	</div>
-	<div class="footerFive">
-    	<a class="links" style="border-bottom:#FF530D 5px solid;" href="Help.html">If you have any questions or need help, please click here.</a>
-	</div>
-</footer>
-</body>
-</html>
+		<span style="font-weight: bold; font-size: 125%;">Banned Items List:</span><br/><br/>
+		<ul style="text-align: left; padding-left: 1.5em; padding-top: 0.5em; padding-bottom: 0.5em">
+			<li>Weapons of any kind.</li>
+			<li>Any non-approved medication or drugs.</li>
+			<li>Ammunition.</li>
+			<li>Cigarettes.</li>
+			<li>E-cigarettes.</li>
+			<li>Explosives.</li>
+			<li>Lighters.</li>
+			<li>Any other item our security team rejects.</li>
+		</ul>
+	</div>  
+</div> 
+<br/>
+<br/>

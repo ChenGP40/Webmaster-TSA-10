@@ -17,14 +17,14 @@
 	<div class="logoText gradientText typewriter">TOGETHER TOWARDS THE FUTURE</div>
 </div>
 <div class="imgWrapper">
-	<img src="images/Spiral Galaxy.jpg" alt="Breathtaking Image of Earth" draggable="false">
+	<img src="Spiral Galaxy.jpg" alt="Breathtaking Image of Earth" draggable="false">
 	<div class="imageText reveal">
 		OUR PACKAGES	
 	</div>
 	<button onclick="window.location.href = 'Packages.php';" class="home reveal">Take me there!</button>
 </div>
 <div class="imgWrapper">
-	<img src="images/Launched Rocket.jpg" alt="Breathtaking Image of Earth" draggable="false">
+	<img src="Launched Rocket.jpg" alt="Breathtaking Image of Earth" draggable="false">
 	<div class="imageText reveal">
 		OUR SHIPS
 	</div>
