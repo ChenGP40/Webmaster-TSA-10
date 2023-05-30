@@ -2,10 +2,10 @@
 	<div class="footerOne">
 		<div><span style="color:#ffd000;">Explore:</span></div>
 		<div><a href="home.php">Home</a></div>
-		<div><a href="Info.php" class="links">Information</a></div>
-		<div><a href="Journey.php" class="links">The Journey</a></div>
-		<div><a href="About.php" class="links">About Us</a></div>
-		<div><a href="Resources.php" class="links">Resources</a></div>
+		<div><a href="Info.php">Information</a></div>
+		<div><a href="Journey.php">The Journey</a></div>
+		<div><a href="About.php">About Us</a></div>
+		<div><a href="Resources.php">Resources</a></div>
 	</div>
 	<div class="footerTwo">
 		<div><span style="color:#ffd000;">Contact:</span></div>
