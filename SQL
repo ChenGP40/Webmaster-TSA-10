@@ -6,6 +6,8 @@ CREATE TABLE users (
     usersPwd varchar(128) not null
 );
 
+--
+
 CREATE TABLE IF NOT EXISTS `products` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`name` varchar(200) NOT NULL,
@@ -22,6 +24,24 @@ INSERT INTO `products` (`id`, `name`, `desc`, `price`, `rrp`, `quantity`, `img`,
 (1, 'Around the World', '', '9999.99', '0.00', 100, 'earth-11009.jpg', '2022-12-13 17:55:22'),
 (2, 'Amongst the Planets', '', '12999.99', '0.00', 100, 'Planets.png', '2022-12-31 18:47:56'),
 (3, 'A Stellar Journey', '', '15999.99', '0.00', 100, 'Nebula.png', '2023-02-14 17:42:04');
+
+--
+
+CREATE TABLE IF NOT EXISTS 'reviews' (
+	'id' int(11) NOT NULL AUTO_INCREMENT,
+	'page_id' int(11) NOT NULL,
+	'name' varchar(255) NOT NULL,
+	'content' text NOT NULL,
+	'rating' tinyint(1) NOT NULL,
+	'submit_date' datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY ('id')
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+
+INSERT INTO 'reviews' ('id', 'page_id', 'name', 'content', 'rating', 'submit_date') VALUES
+(1, 1, 'John Doe', 'This journey was so wonderful to experience with my two kids - we loved it!', 5, '2023-04-30 20:12:40'),
+(2, 1, 'Jane Doe', 'This was probably the best thing that has happened to me since my marriage!', 5, '2023-05-01 12:49:22');
+
+--
 
 <?php
 $serverName = "sql200.epizy.com";

@@ -1,80 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="Space Tourism">
-<meta name="author" content="2103-901">
-<meta name="keywords" content="Space Tourism, NASA, Rockets, Exploration, Space, Cruise">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Webmaster 2103-901</title>
-<link rel="icon" type="image/x-icon" href="Logo.svg">
-<link rel="stylesheet" href="Space.css">
-<link href='https://fonts.googleapis.com/css?family=Chivo Mono' rel='stylesheet'>
-<script src="JAVASCRIPT.js"></script>
-</head>
+<?php
+    ob_start();
+    include("header.php");
+    $buffer=ob_get_contents();
+    ob_end_clean();
 
-<header>
-<nav>
-<div class="navigation">
-	<div class="menu navigationText">
-		<a onclick="toggleMenu()">Menu</a>
-	</div>
-	<div id="navMobile">
-		<a href="index.html" class="navigationText" title="Home" style="border: none;"><img src="Horizon Name Logo Alternate.png" width="125vw"></a>
-		<div class="dropdown navigationText" title="Information" style="position: relative;">Information <span class="arrow" style="font-size: 75%">⮟</span>
-			<a href="Info.html">
-				<span class="clickableBox"></span></a>
-			<div class="dropdownThings">
-				<span style="color: #ffd000; border-bottom:#FF530D 5px solid;">Quick Links</span>
-                <a href="Info.html#packages" title="Available Packages">Available Packages</a>
-				<a href="Info.html#ships" title="Gallery of our Ships">Our Ships</a>
-				<a href="Info.html#dining" title="Dining">Dining</a>
-				<a href="Info.html#entertainment" title="Entertainment">Entertainment</a>
-				<a href="Training.html" title="Special Training Information">Training</a>
-				<a href="Rules.html" title="Onboard Rules">Regulations</a>
-				<a href="Application.html" title="Application">Application</a>
-			</div>
-		</div>
-		<a href="Journey.html" class="navigationText" title="The Journey">The Journey</a>
-		<a href="About.html" class="navigationText" title="About Us">About Us</a>
-		<a href="Resources.html" class="navigationText" title="Resources">Resources</a>
-	</div>
-</div>
-</nav>
-</header>
+    $title = "Help | Horizon";
+    $buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer);
+
+    echo $buffer;
+?>
 
 <body id="info" style="background-image:url(Starry\ Night.svg);">
 <br/><br/><br/>
-<div class="box">
+<!-- <div class="box">
 	<div>
     <iframe class="help" src="https://docs.google.com/forms/d/e/1FAIpQLSdvXQDqICLKHasMawm3JSc9r_QOSUUe3WH5fupyKppS8ljPGA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 	</div>
 </div>
+</body> -->
+<p>SEND E-MAIL</p>
+<form class="signUp" action="contact.php" method="post">
+	<input type="text" name="name" placeholder="Full name">
+	<input type="text" name="mail" placeholder="Your e-mail">
+	<input type="text" name="subject" placeholder="Full name">
+	<textarea name="message" placeholder="Message"></textarea>
+	<button class="signUp" type="submit" name="submit">Submit</button>
+</form>
 
 </body>
-<footer class="footer">
-	<div class="footerOne">
-		<img class="footerimg" src="Logo.svg">
-	</div>
-	<div class="footerTwo"><i>
-		"One small step for man, one giant leap for mankind."</i><br/>
-		- Neil Armstrong
-	</div>
-	<div class="footerThree">
-		<span style="color:#ffd000; border-bottom:#FF530D 5px solid;">Explore</span><br/>
-		<span style="font-size: 75%" ><a href="index.html#sectionA" class="links">Home</a><br/>
-		<a href="Info.html" class="links">Information</a><br/>
-		<a href="Journey.html" class="links">The Journey</a><br/>
-		<a href="About.html" class="links">About Us</a><br/>
-		<a href="Resources.html" class="links">Resources</a></span>
-	</div>
-	<div class="footerFour">
-		<span style="color:#ffd000; border-bottom:#FF530D 5px solid;">Contact</span><br/>
-		<span style="font-size: 75%"><a href="https://twitter.com/_Horizon_Space" class="links">Twitter</a><br/>
-	</div>
-	<div class="footerFive">
-    	<a class="links" style="border-bottom:#FF530D 5px solid;" href="Help.html">If you have any questions or need help, please click here.</a>
-	</div>
-</footer>
-</body>
-</html>
+<?php
+	include_once 'footer.php';
+?>
